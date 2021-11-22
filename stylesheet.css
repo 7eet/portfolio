@@ -1,0 +1,72 @@
+:root {
+    --backgroundColor: #282c34 ;
+    --fontColor: #61dafa;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--fontColor);
+    font-family: 'Inter', sans-serif;
+}
+
+/* navigation bar */
+nav {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > .name {
+    font-size: 16px;
+}
+
+nav > .menu-icon {
+    cursor: pointer;
+}
+
+
+
+/* hero section */
+
+.hero-section {
+    padding: 20px 10px;
+}
+
+.hero-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.hero-description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.skill {
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid var(--fontColor);
+    border-radius: 8px;
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+.skill:hover {
+    background-color: var(--fontColor);
+    color: var(--backgroundColor);
+}
+
+.right-side {
+    margin-top: 50px;
+}
+
+.right-side > h4 {
+    margin-bottom: 10px;
+}
