@@ -70,3 +70,50 @@ nav > .menu-icon {
 .right-side > h4 {
     margin-bottom: 10px;
 }
+
+
+/* about section */
+
+.about {
+    padding: 20px 10px;
+}
+
+.about > h2 {
+    margin-bottom: 10px;
+}
+
+.about > p {
+    margin-top: 10px;
+    line-height: 24px;
+}
+
+/* experience */
+
+.work-experience {
+    padding: 20px 10px;
+}
+
+.work-experience > h2 {
+    margin-bottom: 10px;
+}
+
+.work-experience > p {
+    margin-top: 10px;
+    line-height: 24px;
+}
+
+/* projects */
+.projects {
+    padding: 20px 10px;
+}
+
+.projects > h2 {
+    margin-bottom: 10px;
+}
+
+
+/* footer */
+
+.footer {
+    padding: 20px 10px;
+}
