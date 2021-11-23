@@ -1,6 +1,7 @@
 :root {
     --backgroundColor: #282c34 ;
     --fontColor: #61dafa;
+    --mutedColor: #6c757d;
 }
 
 * {
@@ -12,6 +13,11 @@ body {
     background-color: var(--backgroundColor);
     color: var(--fontColor);
     font-family: 'Inter', sans-serif;
+    line-height: 24px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* navigation bar */
@@ -83,7 +89,7 @@ nav > .menu-icon {
 }
 
 .about > p {
-    margin-top: 10px;
+    margin: 10px 0px 10px 10px;
     line-height: 24px;
 }
 
@@ -97,9 +103,30 @@ nav > .menu-icon {
     margin-bottom: 10px;
 }
 
+.work-experience .experience {
+    margin: 10px 0px 10px 10px;
+}
+
 .work-experience > p {
     margin-top: 10px;
     line-height: 24px;
+}
+
+.work-experience > ul {
+    margin-left: 20px;
+}
+
+.work-experience .responsibilites {
+    margin: 10px 0px;
+}
+
+.work-experience .responsibilites ul {
+    margin: 10px 0px 10px 15px;
+}
+
+.work-experience .responsibilites ul li {
+    margin-top: 5px;
+    list-style: circle;
 }
 
 /* projects */
@@ -114,6 +141,32 @@ nav > .menu-icon {
 
 /* footer */
 
-.footer {
+footer {
     padding: 20px 10px;
+    color: var(--mutedColor);
+}
+
+.connect-icons {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.connect-icons > a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--mutedColor);
+}
+
+.connect-icons > a > svg {
+    width: 30px;
+    height: 30px;
+}
+
+.connect-icons > a > svg:hover {
+    color: var(--fontColor);
+}
+
+.footer-bottom-text {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
