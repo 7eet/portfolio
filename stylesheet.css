@@ -72,6 +72,8 @@ nav > .menu-icon {
     border-radius: 8px;
     margin: 10px 5px;
     padding: 10px;
+    min-width: 60px;
+    text-align: center;
 }
 
 .skill:hover {
