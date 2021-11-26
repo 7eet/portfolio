@@ -32,6 +32,13 @@ const projects = [
 ]
 
 
+const menuIcon = document.getElementById("menu-icon");
+const mobileMenu = document.getElementById("mb-menu");
+
+
+
+actionEventOnMenuIcon();
+
 addSkillsToList();
 
 addProjectList();
@@ -40,7 +47,11 @@ addProjectList();
 
 
 
-
+function actionEventOnMenuIcon() {
+    menuIcon.addEventListener("click", () => {
+        mobileMenu.classList.toggle("showMenu");
+    })
+}
 
 
 
