@@ -1,5 +1,6 @@
 :root {
-  --backgroundColor: #a1d6e2;
+  /* --backgroundColor: #a1d6e2; */
+  --backgroundColor: #eeeeee;
   --fontColor: #021c1e;
   --mutedColor: #6c757d;
 }
@@ -27,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 a {
@@ -69,6 +70,9 @@ nav > .menu-icon {
   padding: 20px;
   background-color: white;
   border-radius: 8px;
+  -webkit-box-shadow: 2px 2px 5px 2px rgb(207, 204, 204);
+  -moz-box-shadow: 2px 2px 5px 2px rgb(207, 204, 204);
+  box-shadow: 2px 2px 5px 2px rgb(207, 204, 204);
 }
 
 .mb-menu ul {
@@ -87,7 +91,7 @@ nav > .menu-icon {
 
 .hero-section {
   padding: 20px 10px;
-  margin-top: 20px;
+  margin: 50px 0px;
 }
 
 .hero-title {
@@ -120,6 +124,7 @@ nav > .menu-icon {
 
 .about {
   padding: 20px 10px;
+  margin: 50px 0px;
 }
 
 .about > h2 {
@@ -151,6 +156,7 @@ nav > .menu-icon {
 
 .work-experience {
   padding: 20px 10px;
+  margin: 50px 0px;
 }
 
 .work-experience > h2 {
@@ -158,7 +164,7 @@ nav > .menu-icon {
 }
 
 .work-experience .experience {
-  margin: 10px 0px 10px 10px;
+  margin: 20px 0px 10px 10px;
 }
 
 .work-experience > p {
@@ -186,6 +192,7 @@ nav > .menu-icon {
 /* projects */
 .projects {
   padding: 20px 10px;
+  margin: 50px 0px;
 }
 
 .projects > h2 {
@@ -193,9 +200,12 @@ nav > .menu-icon {
 }
 
 .projects .card {
-  margin: 20px;
+  margin: 30px 20px;
   border-radius: 10px;
   padding: 20px;
+  -webkit-box-shadow: 2px 2px 5px 2px rgb(207, 204, 204);
+  -moz-box-shadow: 2px 2px 5px 2px rgb(207, 204, 204);
+  box-shadow: 2px 2px 5px 2px rgb(207, 204, 204);
 }
 
 .projects .card:hover {
