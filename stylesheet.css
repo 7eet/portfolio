@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 a {
@@ -70,9 +70,9 @@ nav > .menu-icon {
   padding: 20px;
   background-color: white;
   border-radius: 8px;
-  -webkit-box-shadow: 2px 2px 5px 2px rgb(207, 204, 204);
-  -moz-box-shadow: 2px 2px 5px 2px rgb(207, 204, 204);
-  box-shadow: 2px 2px 5px 2px rgb(207, 204, 204);
+  -webkit-box-shadow: 1px 1px 1px 1px rgb(207, 204, 204);;
+  -moz-box-shadow: 1px 1px 1px 1px rgb(207, 204, 204);;
+  box-shadow: 1px 1px 1px 1px rgb(235, 235, 235);
 }
 
 .mb-menu ul {
@@ -92,17 +92,20 @@ nav > .menu-icon {
 .hero-section {
   padding: 20px 10px;
   margin: 50px 0px;
+  text-align: center;
 }
 
 .hero-title {
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  line-height: 2rem;
 }
 
 .hero-subtitle {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-size: 18px;
 }
 
@@ -112,19 +115,12 @@ nav > .menu-icon {
   font-size: 16px;
 }
 
-.right-side {
-  margin-top: 50px;
-}
-
-.right-side > h4 {
-  margin-bottom: 10px;
-}
-
 /* about section */
 
 .about {
   padding: 20px 10px;
   margin: 50px 0px;
+  text-align: center;
 }
 
 .about > h2 {
@@ -132,7 +128,7 @@ nav > .menu-icon {
 }
 
 .about > p {
-  margin: 10px 0px 10px 10px;
+  margin: 30px 0px 30px 10px;
   line-height: 24px;
 }
 
@@ -141,15 +137,17 @@ nav > .menu-icon {
   display: inline-block;
   border: 0.5px solid var(--fontColor);
   border-radius: 10px;
-  margin: 4px;
+  margin: 8px;
   padding: 8px;
-  min-width: 60px;
+  min-width: 100px;
   text-align: center;
+  background-color: var(--fontColor);
+  color: var(--backgroundColor);
 }
 
 .skill:hover {
-  background-color: var(--fontColor);
-  color: var(--backgroundColor);
+  background-color: var(--backgroundColor);
+  color: var(--fontColor);
 }
 
 /* experience */
@@ -160,7 +158,8 @@ nav > .menu-icon {
 }
 
 .work-experience > h2 {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .work-experience .experience {
@@ -196,7 +195,8 @@ nav > .menu-icon {
 }
 
 .projects > h2 {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .projects .card {
@@ -222,6 +222,7 @@ nav > .menu-icon {
 
 .card-footer {
   font-style: italic;
+  text-decoration: underline;
 }
 
 .card-footer svg {
