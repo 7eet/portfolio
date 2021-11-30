@@ -15,7 +15,7 @@ body {
   color: var(--fontColor);
   font-family: "Inter", sans-serif;
   line-height: 24px;
-  font-size: 13px;
+  font-size: 12px;
   padding: 5px 10px;
 }
 
@@ -68,7 +68,7 @@ nav > .menu-icon {
   display: none;
   position: absolute;
   right: 20px;
-  padding: 20px;
+  padding: 30px;
   background-color: white;
   border-radius: 8px;
   -webkit-box-shadow: 1px 1px 1px 1px rgb(207, 204, 204);;
@@ -81,7 +81,7 @@ nav > .menu-icon {
 }
 
 .mb-menu ul li {
-  margin: 5px 0px;
+  margin: 10px 0px;
 }
 
 .showMenu {
@@ -216,11 +216,11 @@ nav > .menu-icon {
 }
 
 .card > .card-header {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .card > .card-body {
-  margin: 10px 0px;
+  margin: 20px 0px;
 }
 
 .card-footer {
