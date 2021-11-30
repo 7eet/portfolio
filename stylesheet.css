@@ -16,6 +16,7 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 24px;
   font-size: 13px;
+  padding: 5px 10px;
 }
 
 .flex {
@@ -97,8 +98,8 @@ nav > .menu-icon {
 
 .hero-title {
   margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
   letter-spacing: 1.3px;
   line-height: 2rem;
 }
@@ -106,12 +107,12 @@ nav > .menu-icon {
 .hero-subtitle {
   margin-top: 10px;
   margin-bottom: 40px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .hero-description {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-size: 16px;
 }
 
@@ -124,7 +125,7 @@ nav > .menu-icon {
 }
 
 .about > h2 {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .about > p {
@@ -135,14 +136,16 @@ nav > .menu-icon {
 .skill {
   list-style-type: none;
   display: inline-block;
-  border: 0.5px solid var(--fontColor);
-  border-radius: 10px;
-  margin: 8px;
+  /* border: 0.5px solid var(--fontColor); */
+  border-radius: 8px;
+  margin: 10px;
   padding: 8px;
   min-width: 100px;
   text-align: center;
-  background-color: var(--fontColor);
-  color: var(--backgroundColor);
+  box-shadow: 1px 1px 3px 1px rgb(207, 204, 204);
+
+  /* background-color: var(--fontColor);
+  color: var(--backgroundColor); */
 }
 
 .skill:hover {
@@ -157,8 +160,8 @@ nav > .menu-icon {
   margin: 50px 0px;
 }
 
-.work-experience > h2 {
-  margin-bottom: 30px;
+.work-experience > h1 {
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -194,18 +197,18 @@ nav > .menu-icon {
   margin: 50px 0px;
 }
 
-.projects > h2 {
-  margin-bottom: 30px;
+.projects > h1 {
+  margin-bottom: 50px;
   text-align: center;
 }
 
 .projects .card {
-  margin: 30px 20px;
+  margin: 30px 5px;
   border-radius: 10px;
   padding: 20px;
-  -webkit-box-shadow: 2px 2px 5px 2px rgb(207, 204, 204);
-  -moz-box-shadow: 2px 2px 5px 2px rgb(207, 204, 204);
-  box-shadow: 2px 2px 5px 2px rgb(207, 204, 204);
+  -webkit-box-shadow: 1px 1px 3px 1px rgb(207, 204, 204);
+  -moz-box-shadow: 1px 1px 3px 1px rgb(207, 204, 204);
+  box-shadow: 1px 1px 3px 1px rgb(207, 204, 204);
 }
 
 .projects .card:hover {
@@ -213,7 +216,7 @@ nav > .menu-icon {
 }
 
 .card > .card-header {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .card > .card-body {
