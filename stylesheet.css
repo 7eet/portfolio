@@ -280,11 +280,11 @@ footer {
     padding: 30px 20px;
   }
 
-  .hero-section {
+  /* .hero-section {
     display: grid;
     grid-template-columns: 60% 1fr;
     grid-gap: 40px;
-  }
+  } */
 
   .about .skills-section {
     margin-top: 20px;
