@@ -1,8 +1,9 @@
 :root {
   /* --backgroundColor: #a1d6e2; */
-  --backgroundColor: #eeeeee;
-  --fontColor: #021c1e;
+  --backgroundColor: #ffffff;
+  --fontColor: #202020;
   --mutedColor: #6c757d;
+  --maxWidth: 1100px;
 }
 
 * {
@@ -17,6 +18,10 @@ body {
   line-height: 24px;
   font-size: 12px;
   padding: 5px 10px;
+}
+
+.card {
+  background-color: #eae9fb;
 }
 
 .flex {
@@ -146,6 +151,7 @@ nav > .menu-icon {
   min-width: 100px;
   text-align: center;
   box-shadow: 1px 1px 3px 1px rgb(207, 204, 204);
+  background-color: #eae9fb;
 
   /* background-color: var(--fontColor);
   color: var(--backgroundColor); */
@@ -304,7 +310,13 @@ footer {
 
 /* desktop view */
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
+
+  body {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+  }
+
   .lg-view {
     display: block;
   }
@@ -372,7 +384,7 @@ footer {
   }
   
   .skill {
-    margin: 15px;
+    margin: 10px;
     padding: 10px;
     min-width: 120px;
     text-align: center;
@@ -475,31 +487,23 @@ footer {
   /* footer */
   
   footer {
-    padding: 20px 10px;
+    padding: 40px 20px;
     color: var(--mutedColor);
   }
   
   .connect-icons {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   
   .connect-icons > a {
-    margin-right: 10px;
+    margin-right: 20px;
     color: var(--mutedColor);
   }
   
   .connect-icons > a > svg {
-    width: 24px;
-    height: 24px;
+    width: 35px;
+    height: 35px;
   }
   
-  .connect-icons > a > svg:hover {
-    color: var(--fontColor);
-  }
-  
-  .footer-bottom-text {
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }  
 }
