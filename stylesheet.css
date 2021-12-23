@@ -22,6 +22,10 @@ body {
   padding: 5px 10px;
 }
 
+.highlight {
+  font-weight: 600;
+}
+
 .card {
   background-color: var(--cardBackgroundColor);
   color: var(---cardTextColor);
@@ -142,6 +146,7 @@ nav > .menu-icon {
 .about p {
   margin: 30px 0px 30px 10px;
   line-height: 24px;
+  text-align: left;
 }
 
 .skill {
