@@ -1,9 +1,11 @@
 :root {
   /* --backgroundColor: #a1d6e2; */
   --backgroundColor: #ffffff;
-  --fontColor: #202020;
+  --fontColor: #12293b;
   --mutedColor: #6c757d;
   --maxWidth: 1100px;
+  --cardBackgroundColor: #12293b;
+  ---cardTextColor: #eeeeee;
 }
 
 * {
@@ -21,7 +23,8 @@ body {
 }
 
 .card {
-  background-color: #eae9fb;
+  background-color: var(--cardBackgroundColor);
+  color: var(---cardTextColor);
 }
 
 .flex {
@@ -151,7 +154,8 @@ nav > .menu-icon {
   min-width: 100px;
   text-align: center;
   box-shadow: 1px 1px 3px 1px rgb(207, 204, 204);
-  background-color: #eae9fb;
+  background-color: var(--cardBackgroundColor);
+  color: var(---cardTextColor);
 
   /* background-color: var(--fontColor);
   color: var(--backgroundColor); */
