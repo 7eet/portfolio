@@ -13,6 +13,11 @@
   padding: 0px;
 }
 
+.downloadLogo {
+  width: 18px;
+  height: 18px;
+}
+
 body {
   background-color: var(--backgroundColor);
   color: var(--fontColor);
@@ -320,6 +325,11 @@ footer {
 /* desktop view */
 
 @media (min-width: 1000px) {
+
+  .downloadLogo {
+    width: 18px;
+    height: 18px;
+  }
 
   body {
     max-width: var(--maxWidth);
