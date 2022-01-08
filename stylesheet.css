@@ -482,6 +482,8 @@ footer {
     -webkit-box-shadow: inset 1px 1px 3px 1px rgb(207, 204, 204);
     -moz-box-shadow: inset 1px 1px 3px 1px rgb(207, 204, 204);
     box-shadow: inset 1px 1px 3px 1px rgb(207, 204, 204);
+    background-color: var(--backgroundColor);
+    color: var(--fontColor);
   }
   
   .card > .card-header {
