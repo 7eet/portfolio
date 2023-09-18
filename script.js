@@ -1,6 +1,5 @@
 const skills = ["Java", "JavaScript", "HTML", "CSS", "Git", "GitHub", "Docker",
-"Angularjs", "Reactjs", "Nodejs", "Expressjs", "MongoDB", "MySQL", "Gradle",
-"GitHub Actions" ];
+"Angularjs", "Reactjs", "Nodejs", "Expressjs", "MongoDB", "MySQL", "Gradle", "Jenkins", "Kubernetes", "AWS", "JSON", "UI Design" ];
 
 
 const projects = [
