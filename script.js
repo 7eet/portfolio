@@ -1,8 +1,12 @@
-const skills = ["Java", "JavaScript", "HTML", "CSS", "Git", "GitHub", "Docker",
-"Angularjs", "Reactjs", "Nodejs", "Expressjs", "MongoDB", "MySQL", "Gradle", "Jenkins", "Kubernetes", "AWS", "JSON", "UI Design" ];
+const skills = ["Web Development","MERN Stack", "HTML", "CSS", "JavaScript", "CI-CD", "Jenkins", "Docker", "Python", "Git and GitHub","React.js", "Amazon Web Services (AWS)", "Team Collaboration", "Communication"];
 
 
 const projects = [
+		{
+        "title": "Weather Application",
+        "description": "It will display all the basic details of the given location onto the screen. Used React.js and REST API",
+        "link": "https://github.com/7eet/"
+    },
     {
         "title": "Book Library",
         "description": "In this simple application users can add, view and delete books as well as authors. This is a full stack application",

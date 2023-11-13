@@ -142,17 +142,18 @@ nav > .menu-icon {
   padding: 20px 10px;
   margin: 50px 0px;
   text-align: center;
+  
 }
 
-.about h2 {
-  margin-bottom: 50px;
+.about h1 {
+  margin: 50px 0px 30px 0px;
 }
 
-.about p {
+/*.about p {
   margin: 30px 0px 30px 10px;
   line-height: 24px;
   text-align: left;
-}
+}*/
 
 .skill {
   list-style-type: none;
@@ -310,9 +311,6 @@ footer {
     grid-gap: 40px;
   } */
 
-  .about .skills-section {
-    margin-top: 20px;
-  }
 
   .skill {
     margin: 20px;
@@ -397,7 +395,7 @@ footer {
     margin-bottom: 100px;
   }
   
-  .about p {
+  .about p , ul{
     margin: 30px 0px 30px 0px;
     line-height: 34px;
   }
