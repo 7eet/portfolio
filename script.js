@@ -1,4 +1,4 @@
-const skills = ["Web Development","MERN Stack", "HTML", "CSS", "JavaScript", "CI-CD", "Jenkins", "Docker", "Python", "Git and GitHub","React.js", "Amazon Web Services (AWS)", "Team Collaboration", "Communication"];
+const skills = ["Web Development","MERN Stack", "HTML", "CSS", "JavaScript", "CI-CD", "Jenkins", "Docker", "Python", "Git and GitHub","React.js", "Amazon Web Services (AWS)", "MySQL", "Team Collaboration", "Communication"];
 
 
 const projects = [
