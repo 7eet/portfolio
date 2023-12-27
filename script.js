@@ -3,13 +3,18 @@ const skills = ["Web Development","MERN Stack", "HTML", "CSS", "JavaScript", "CI
 
 const projects = [
 		{
-        "title": "Weather Application",
-        "description": "It will display all the basic details of the given location onto the screen. Used React.js and REST API",
+        "title": "Chat Application",
+        "description": "Chat application built using Socket.io library, Node.js, Express.js and React.js",
         "link": "https://github.com/7eet/"
+    },
+		{
+        "title": "Weather Application",
+        "description": "It will display all the basic weather details of the user provided location onto the screen. Used React.js and OpenWeather API",
+        "link": "https://github.com/7eet/WeatherApp"
     },
     {
         "title": "Book Library",
-        "description": "In this simple application users can add, view and delete books as well as authors. This is a full stack application",
+        "description": "User can view list of books and read the summary of that book It is mobile responsive application",
         "link": "https://github.com/7eet/Book_Library"
     },
     {
