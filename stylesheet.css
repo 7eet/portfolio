@@ -122,8 +122,8 @@ nav {
 }
 
 .menu > a:hover {
-  background-color: var(--color-bg);
-  color: var(---cardTextColor);
+  background-color: var(--color-heading);
+  color: var(--color-bg);
 }
 
 .showMenu {
@@ -331,6 +331,26 @@ footer svg {
 
 
 @media only screen and (min-width: 1024px) { 
+
+  .theme {
+    border-radius: 1rem;
+    top: 1%;
+    right: 1%;
+    display: flex;
+    border: 1px solid blueviolet;
+    padding: 5px;
+  }
+  
+  .theme > div {
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  
+  .theme > div > svg {
+    width: 1.5rem;
+    height: 1.5rem;;
+  }
+  
 
   body {
     font-size: 18px;
