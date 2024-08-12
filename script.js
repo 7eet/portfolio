@@ -55,11 +55,11 @@ addProjectList();
 
 
 
-function actionEventOnMenuIcon() {
-    menuIcon.addEventListener("click", () => {
-        mobileMenu.classList.toggle("showMenu");
-    })
-}
+// function actionEventOnMenuIcon() {
+//     menuIcon.addEventListener("click", () => {
+//         mobileMenu.classList.toggle("showMenu");
+//     })
+// }
 
 
 
