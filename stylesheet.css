@@ -1,528 +1,249 @@
 :root {
   /* --backgroundColor: #a1d6e2; */
-  --backgroundColor: #ffffff;
-  --fontColor: #12293b;
+  /*previous --backgroundColor: #ffffff; */
+  /* new one below */
+  --backgroundColor: #10132bf2;
+  --fontColor: #d3d2ef;
+  --paragraphColor: #9483B8;
+  --dimColor: #0b2f49;
+  /* --fontColor: #12293b; */
   --mutedColor: #6c757d;
   --maxWidth: 1100px;
   --cardBackgroundColor: #12293b;
   ---cardTextColor: #eeeeee;
+  
 }
+
 
 * {
   margin: 0px;
   padding: 0px;
 }
 
-.downloadLogo {
-  width: 18px;
-  height: 18px;
-}
-
 body {
+  padding: 40px 20px;
+  font-size: 16px;
   background-color: var(--backgroundColor);
-  color: var(--fontColor);
+  color: var(--paragraphColor);
   font-family: "Inter", sans-serif;
-  line-height: 24px;
-  font-size: 12px;
-  padding: 5px 10px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.highlight {
-  font-weight: 600;
+h1,h2,h3 {
+  color: var(--fontColor);
+  font-weight: 700;
 }
 
-.card {
-  background-color: var(--cardBackgroundColor);
-  color: var(---cardTextColor);
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 .flex {
   display: flex;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500;
+img {
+  width: 15px;
+  height: 15px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--paragraphColor);
 }
 
 .text-center {
   text-align: center;
 }
 
-.lg-view {
-  display: none;
+p {
+  line-height: 1.6;
 }
 
-.displayNone {
-  display: none;
-}
 
 /* navigation bar */
+
 nav {
-  padding: 20px 10px;
+  margin: 20px 0px;
+  background-color: var(---cardTextColor);
+  padding: 10px;
+  border-radius: 20px;
+  color: var(--backgroundColor);
 }
 
-nav .flex {
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav > .name {
-  font-size: 16px;
-}
-
-nav > .menu-icon {
-  cursor: pointer;
+/* .lg-view {
+  display: none;;
 }
 
 .mb-menu {
   display: none;
-  position: absolute;
-  right: 20px;
-  padding: 30px;
-  background-color: white;
-  border-radius: 8px;
-  -webkit-box-shadow: 1px 1px 1px 1px rgb(207, 204, 204);
-  -moz-box-shadow: 1px 1px 1px 1px rgb(207, 204, 204);
-  box-shadow: 1px 1px 1px 1px rgb(235, 235, 235);
+} */
+
+
+.menu {
+  display: flex;
+  justify-content: center;
 }
 
-.mb-menu ul {
-  list-style-type: none;
+.menu > a {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
 }
 
-.mb-menu ul li {
-  margin: 10px 0px;
+.menu > a:hover {
+  background-color: var(--backgroundColor);
+  color: var(---cardTextColor);
 }
 
 .showMenu {
   display: block;
+  width: 50%;
+  position: absolute;
+  background-color: white;
+  left: 40px;
+  top: 100px;
+  padding: 20px;
+  border-radius: 15px;
 }
 
-/* hero section */
 
-.hero-section {
-  padding: 20px 10px;
-  margin: 50px 0px;
-  text-align: center;
+/* header section */
+
+header {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-title {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  letter-spacing: 1.3px;
-  line-height: 2rem;
+  font-size: 2rem;
 }
 
 .hero-subtitle {
-  margin-top: 10px;
-  margin-bottom: 40px;
-  font-size: 16px;
+  font-size: 1.5rem;
+  margin: 10px 0px;
 }
 
 .hero-description {
-  margin-top: 30px;
-  margin-bottom: 50px;
-  font-size: 16px;
+  margin: 20px 0px;
 }
+
 
 /* about section */
 
 .about {
-  padding: 20px 10px;
-  margin: 50px 0px;
-  text-align: center;
-  
-}
-
-.about h1 {
-  margin: 50px 0px 30px 0px;
-}
-
-/*.about p {
-  margin: 30px 0px 30px 10px;
-  line-height: 24px;
-  text-align: left;
-}*/
-
-.skill {
-  list-style-type: none;
-  display: inline-block;
-  /* border: 0.5px solid var(--fontColor); */
-  border-radius: 8px;
-  margin: 10px;
-  padding: 8px;
-  min-width: 100px;
-  text-align: center;
-  box-shadow: 1px 1px 3px 1px rgb(207, 204, 204);
-  background-color: var(--cardBackgroundColor);
-  color: var(---cardTextColor);
-
-  /* background-color: var(--fontColor);
-  color: var(--backgroundColor); */
-}
-
-.skill:hover {
-  background-color: var(--backgroundColor);
-  color: var(--fontColor);
-  box-shadow: none;
-}
-
-/* experience */
-
-.work-experience {
-  padding: 20px 10px;
-  margin: 50px 0px;
-}
-
-.work-experience > h1 {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.work-experience .experience {
-  margin: 20px 0px 10px 10px;
-}
-
-.work-experience > p {
-  margin-top: 10px;
-  line-height: 24px;
-}
-
-.work-experience > ul {
-  margin-left: 20px;
-}
-
-.work-experience .responsibilites {
-  margin: 10px 0px;
-}
-
-.work-experience .responsibilites ul {
-  margin: 10px 0px 10px 15px;
-}
-
-.work-experience .responsibilites ul li {
-  margin-top: 5px;
-  list-style: circle;
-}
-
-/* projects */
-.projects {
-  padding: 20px 10px;
-  margin: 50px 0px;
-}
-
-.projects > h1 {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.projects .card {
-  margin: 30px 5px;
-  border-radius: 10px;
-  padding: 20px;
-  -webkit-box-shadow: 1px 1px 3px 1px rgb(207, 204, 204);
-  -moz-box-shadow: 1px 1px 3px 1px rgb(207, 204, 204);
-  box-shadow: 1px 1px 3px 1px rgb(207, 204, 204);
-}
-
-.projects .card:hover {
-  box-shadow: var(--fontColor) 0px 0px 0px 2px;
-}
-
-.card > .card-header {
-  font-size: 1rem;
-}
-
-.card > .card-body {
   margin: 20px 0px;
 }
 
-.card-footer {
-  font-style: italic;
-  text-decoration: underline;
+.about > div {
+  padding: 20px 0px;
 }
 
-.card-footer svg {
-  margin-left: 5px;
-  width: 16px;
-  height: 16px;
+.about > .left-side > p {
+  margin: 40px 0px;
+}
+
+.about > .skills-section > ul {
+  margin: 40px 0px;
+}
+
+#skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  text-align: center;
+}
+
+#skills-list > li {
+  background-color: var(--dimColor);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+/* work experience  */
+
+.work-experience {
+  margin: 20px 0px;
+}
+
+.experience {
+  margin: 40px 0px;
+}
+
+.experience > .heading > p {
+  padding: 10px 0px;
+}
+
+.responsibilites {
+  padding: 10px 0px;
+}
+
+/* project */
+
+.projects {
+  margin: 20px 0px;
+}
+
+.projects-list {
+  padding: 20px 0px;
+}
+
+.projects svg {
+  width: 15px;
+  height: 15px;
+}
+
+.card {
+  margin: 20px 0px;
+}
+
+.card-header {
+  color: var(---cardTextColor);
+}
+
+.card-header, .card-footer {
+  padding: 10px 0px;
 }
 
 /* footer */
 
 footer {
-  padding: 20px 10px;
-  color: var(--mutedColor);
+  margin: 20px 0px;
 }
 
 .connect-icons {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  padding: 10px 0px;
 }
 
 .connect-icons > a {
-  margin-right: 10px;
-  color: var(--mutedColor);
+  margin: 0px 5px;
 }
 
-.connect-icons > a > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.connect-icons > a > svg:hover {
-  color: var(--fontColor);
+footer svg {
+  width: 20px;
+  height: 20px;
 }
 
 .footer-bottom-text {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-/* ipad view */
-@media (min-width: 760px) {
-  body {
-    font-size: 15px;
-    line-height: 28px;
-  }
-
-  nav,
-  .hero-section,
-  .about,
-  .work-experience,
-  .projects {
-    padding: 30px 20px;
-  }
-
-  /* .hero-section {
-    display: grid;
-    grid-template-columns: 60% 1fr;
-    grid-gap: 40px;
-  } */
-
-
-  .skill {
-    margin: 20px;
-    padding: 16px;
-    min-width: 60px;
-    text-align: center;
-  }
-}
-
-/* desktop view */
-
-@media (min-width: 1000px) {
-
-  .downloadLogo {
-    width: 18px;
-    height: 18px;
-  }
-
-  body {
-    max-width: var(--maxWidth);
-    margin: 0 auto;
-  }
-
-  .lg-view {
-    display: block;
-  }
-
-  .mb-menu,
-  .menu-icon {
-    display: none;
-  }
-
-  .menu-list {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .menu-list > li {
-    margin-left: 30px;
-  }
-
-  /* hero section */
-
-  .hero-section {
-    padding: 40px 20px;
-    margin: 100px 0px;
-  }
-
-  .hero-title {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 26px;
-    letter-spacing: 2px;
-    line-height: 3rem;
-  }
-
-  .hero-subtitle {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    font-size: 20px;
-  }
-
-  .hero-description {
-    margin-top: 30px;
-    margin-bottom: 50px;
-    font-size: 18px;
-  }
-
-  /* hero section end */
-
-  .about {
-    padding: 40px 20px;
-    margin: 100px 0px;
-    text-align: left;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-  }
-
-  .about h2 {
-    margin-bottom: 100px;
-  }
-  
-  .about p , ul{
-    margin: 30px 0px 30px 0px;
-    line-height: 34px;
-  }
-  
-  .skill {
-    margin: 10px;
-    padding: 10px;
-    min-width: 120px;
-    text-align: center;
-    box-shadow: 1px 1px 3px 1px rgb(207, 204, 204);
-  }
-  
-  .skill:hover {
-    box-shadow: inset 1px 1px 3px 1px rgb(207, 204, 204);
-  }
-  
-  /* experience */
-  
-  .work-experience {
-    padding: 40px 20px;
-    margin: 100px 0px;
-  }
-  
-  .work-experience > h1 {
-    margin-bottom: 50px;
-    text-align: center;
-  }
-  
-  .work-experience .experience {
-    margin: 20px 0px 10px 10px;
-  }
-  
-  .work-experience > p {
-    margin-top: 10px;
-    line-height: 24px;
-  }
-  
-  .work-experience > ul {
-    margin-left: 20px;
-  }
-  
-  .work-experience .responsibilites {
-    margin: 10px 0px;
-  }
-  
-  .work-experience .responsibilites ul {
-    margin: 10px 0px 10px 15px;
-  }
-  
-  .work-experience .responsibilites ul li {
-    margin-top: 5px;
-    list-style: circle;
-  }
-  
-  /* projects */
-  .projects {
-    padding: 40px 20px;
-    margin: 100px 0px;
-  }
-  
-  .projects > h1 {
-    margin-bottom: 50px;
-    text-align: center;
-  }
-
-  .projects-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px;
-  }
-  
-  .projects .card {
-    margin: 30px 5px;
-    border-radius: 10px;
-    padding: 20px;
-    -webkit-box-shadow: 1px 1px 3px 1px rgb(207, 204, 204);
-    -moz-box-shadow: 1px 1px 3px 1px rgb(207, 204, 204);
-    box-shadow: 1px 1px 3px 1px rgb(207, 204, 204);
-  }
-  
-  .projects .card:hover {
-    -webkit-box-shadow: inset 1px 1px 3px 1px rgb(207, 204, 204);
-    -moz-box-shadow: inset 1px 1px 3px 1px rgb(207, 204, 204);
-    box-shadow: inset 1px 1px 3px 1px rgb(207, 204, 204);
-    background-color: var(--backgroundColor);
-    color: var(--fontColor);
-  }
-  
-  .card > .card-header {
-    font-size: 1rem;
-  }
-  
-  .card > .card-body {
-    margin: 20px 0px;
-  }
-  
-  .card-footer {
-    font-style: italic;
-    text-decoration: underline;
-  }
-  
-  .card-footer svg {
-    margin-left: 5px;
-    width: 16px;
-    height: 16px;
-  }
-  
-  /* footer */
-  
-  footer {
-    padding: 40px 20px;
-    color: var(--mutedColor);
-  }
-  
-  .connect-icons {
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-  
-  .connect-icons > a {
-    margin-right: 20px;
-    color: var(--mutedColor);
-  }
-  
-  .connect-icons > a > svg {
-    width: 35px;
-    height: 35px;
-  }
-  
-}

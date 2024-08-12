@@ -1,4 +1,4 @@
-const skills = ["Web Development","MERN Stack", "HTML", "CSS", "JavaScript", "CI-CD", "Jenkins", "Docker", "Python", "Git and GitHub","React.js", "Amazon Web Services (AWS)", "MySQL", "Team Collaboration", "Communication"];
+const skills = [ "Figma", "UX" , "HTML", "CSS", "JavaScript", "CI-CD", "Git and GitHub","React.js", "Amazon Web Services (AWS)", "MySQL"];
 
 
 const projects = [
@@ -40,12 +40,12 @@ const projects = [
 ]
 
 
-const menuIcon = document.getElementById("menu-icon");
-const mobileMenu = document.getElementById("mb-menu");
+// const menuIcon = document.getElementById("menu-icon");
+// const mobileMenu = document.getElementById("mb-menu");
 
 
 
-actionEventOnMenuIcon();
+// actionEventOnMenuIcon();
 
 addSkillsToList();
 
@@ -80,8 +80,10 @@ function addProjectList() {
         let cardElement = document.createElement("div");
         cardElement.classList.add("card");
 
-        let cardHeader = document.createElement("div");
-        cardHeader.classList.add("card-header");
+        let cardHeaderDiv = document.createElement("div");
+        cardHeaderDiv.classList.add("card-header");
+
+        let cardHeader = document.createElement("h3");
 
         let cardBody = document.createElement("div");
         cardBody.classList.add("card-body");
@@ -103,7 +105,8 @@ function addProjectList() {
       </a>`
 
 
-      cardElement.appendChild(cardHeader);
+      cardHeaderDiv.appendChild(cardHeader);
+      cardElement.appendChild(cardHeaderDiv);
       cardElement.appendChild(cardBody);
       cardElement.appendChild(cardFooter);
 
