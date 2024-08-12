@@ -21,7 +21,7 @@
 }
 
 body {
-  padding: 40px 20px;
+  padding: 20px;
   font-size: 16px;
   background-color: var(--backgroundColor);
   color: var(--paragraphColor);
@@ -42,6 +42,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -148,7 +149,7 @@ header {
 /* about section */
 
 .about {
-  margin: 20px 0px;
+  margin: 3rem 0px;
 }
 
 .about > div {
@@ -156,11 +157,11 @@ header {
 }
 
 .about > .left-side > p {
-  margin: 40px 0px;
+  margin: 20px 0px;
 }
 
 .about > .skills-section > ul {
-  margin: 40px 0px;
+  margin: 20px 0px;
 }
 
 #skills-list {
@@ -172,8 +173,7 @@ header {
 }
 
 #skills-list > li {
-  background-color: var(--dimColor);
-  color: white;
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
 }
@@ -182,29 +182,25 @@ header {
 /* work experience  */
 
 .work-experience {
-  margin: 20px 0px;
+  margin: 3rem 0px;
 }
 
 .experience {
-  margin: 40px 0px;
+  margin-bottom: 2rem;
 }
 
 .experience > .heading > p {
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 
 .responsibilites {
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 
 /* project */
 
 .projects {
-  margin: 20px 0px;
-}
-
-.projects-list {
-  padding: 20px 0px;
+  margin: 3rem 0px;
 }
 
 .projects svg {
@@ -213,7 +209,7 @@ header {
 }
 
 .card {
-  margin: 20px 0px;
+  margin-bottom: 2rem;
 }
 
 .card-header {
@@ -224,10 +220,14 @@ header {
   padding: 10px 0px;
 }
 
+.card-footer a {
+  color: white;
+}
+
 /* footer */
 
 footer {
-  margin: 20px 0px;
+  margin-top: 3rem;
 }
 
 .connect-icons {
