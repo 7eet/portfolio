@@ -1,4 +1,4 @@
-const skills = [ "Figma", "UX" , "HTML", "CSS", "JavaScript", "CI-CD", "Git and GitHub","React.js", "Amazon Web Services (AWS)", "MySQL"];
+const skills = [ "Figma", "UX" , "HTML", "CSS", "JavaScript", "CI-CD", "Git", "React.js", "AWS", "MySQL"];
 
 
 const projects = [
