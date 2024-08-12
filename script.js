@@ -43,6 +43,16 @@ const projects = [
 // const menuIcon = document.getElementById("menu-icon");
 // const mobileMenu = document.getElementById("mb-menu");
 
+const lightTheme = document.getElementById("light-theme");
+const darkTheme = document.getElementById("dark-theme");
+
+const html = document.querySelector("html");
+
+let isLightTheme = true;
+
+
+
+
 
 
 // actionEventOnMenuIcon();
@@ -50,6 +60,29 @@ const projects = [
 addSkillsToList();
 
 addProjectList();
+
+toggleTheme();
+
+
+function toggleTheme() {
+
+    lightTheme.addEventListener("click", () => {
+        if (!isLightTheme) {
+            lightTheme.classList.add("toggle-theme");
+            html.setAttribute("data-theme", "light");
+            darkTheme.classList.remove("toggle-theme");
+            isLightTheme = true;
+        }
+    })
+    darkTheme.addEventListener("click", () => {
+        if (isLightTheme) {
+            darkTheme.classList.add("toggle-theme");
+            html.setAttribute("data-theme", "dark")
+            lightTheme.classList.remove("toggle-theme");
+            isLightTheme = false;
+        }
+    });
+};
 
 
 
@@ -114,3 +147,8 @@ function addProjectList() {
 
     })
 }
+
+
+window.onload = function() {
+    lightTheme.classList.add("toggle-theme");
+ }

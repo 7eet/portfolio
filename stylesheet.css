@@ -2,16 +2,35 @@
   /* --backgroundColor: #a1d6e2; */
   /*previous --backgroundColor: #ffffff; */
   /* new one below */
-  --backgroundColor: #10132bf2;
-  --fontColor: #d3d2ef;
+  --backgroundColor: white;
+  --headingColor: #10132bf2;
   --paragraphColor: #9483B8;
-  --dimColor: #0b2f49;
+  --fontColor: #0b2f49;
   /* --fontColor: #12293b; */
   --mutedColor: #6c757d;
   --maxWidth: 1100px;
   --cardBackgroundColor: #12293b;
-  ---cardTextColor: #eeeeee;
+  --cardTextColor: #eeeeee;
+  --linkColor: blueviolet;
+
+  --darkBackground: #10132bf2;
+  --darkHeadingColor: #d3d2ef;
+  --darkParaColor: #9483B8; 
   
+}
+
+[data-theme="light"] {
+  --color-bg: var(--backgroundColor);
+  --color-heading: var(--headingColor);
+  --color-para: var(--fontColor);
+  --color-link: var(--paragraphColor);
+}
+
+[data-theme="dark"] {
+  --color-bg: var(--darkBackground);
+  --color-heading: var(--darkHeadingColor);
+  --color-para: var(--darkParaColor);
+  --color-link: white;
 }
 
 
@@ -23,16 +42,21 @@
 body {
   padding: 20px;
   font-size: 16px;
-  background-color: var(--backgroundColor);
-  color: var(--paragraphColor);
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  background-color: var(--color-bg);
+  color: var(--color-para);
 }
 
+/* .dark-theme {
+  background-color: var(--backgroundColor);
+  color: var(--paragraphColor);
+} */
+
 h1,h2,h3 {
-  color: var(--fontColor);
+  color: var(--color-heading);
   font-weight: 700;
 }
 
@@ -64,7 +88,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--paragraphColor);
+  color: var(--color-link);
 }
 
 .text-center {
@@ -85,8 +109,8 @@ nav {
 }
 
 .menu {
-  color: var(--backgroundColor);
-  background-color: var(---cardTextColor);
+  color: var(--color-bg);
+  /* background-color: white; */
   padding: 1rem;
   border-radius: 10px;;
 }
@@ -98,7 +122,7 @@ nav {
 }
 
 .menu > a:hover {
-  background-color: var(--backgroundColor);
+  background-color: var(--color-bg);
   color: var(---cardTextColor);
 }
 
@@ -113,6 +137,39 @@ nav {
   border-radius: 15px;
 }
 
+.theme {
+  position: absolute;
+  background-color: white;
+  border-radius: 0.5rem;
+  top: 0%;
+  right: 1%;
+  display: flex;
+  border: 1px solid blueviolet;
+  padding: 2px;
+}
+
+.theme > div {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.theme > div > svg {
+  width: 1rem;
+  height: 1rem;;
+}
+
+.toggle-theme {
+  background-color: blueviolet;
+}
+
+.dark {
+  background-color: var(--darkBackground);
+  color: var(--darkParaColor);
+}
+
+.toggle-theme > svg {
+  fill: white;
+}
 
 /* header section */
 
@@ -210,10 +267,6 @@ header {
 
 .card-header, .card-footer {
   padding: 10px 0px;
-}
-
-.card-footer a {
-  color: white;
 }
 
 /* footer */
